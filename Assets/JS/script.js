@@ -17,7 +17,7 @@ $(document).ready(function() {
     function checkHour() {
         var currentTime = moment().hours();
 
-        $(".time-block").each(function() {
+        $(".description").each(function() {
             var timeBlockHour = parseInt($(this).attr("id").split("-")[1]);
             // Past should be grey 
             if (timeBlockHour < currentTime) {
@@ -48,4 +48,14 @@ $(document).ready(function() {
     }
     
     loadTasks();
+    
+    // Runs checkHour every 15 minutes in order for the task...
+    // ...background to stay up to date
+    setInterval(function () {
+       checkHour();
+    }, 900000);
 });
+
+
+
+
