@@ -16,6 +16,7 @@ Work Day Scheduler is a website that allows you to store your meetings, appointm
 (https://mcrouse42.github.io/work-day-scheduler/)
 
 ## Screenshot 
+<blockquote class="imgur-embed-pub" lang="en" data-id="DKBpEzZ" data-context="false" ><a href="//imgur.com/DKBpEzZ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 (https://imgur.com/DKBpEzZ)
 
 ## Created by
