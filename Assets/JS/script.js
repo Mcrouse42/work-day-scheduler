@@ -37,6 +37,8 @@ $(document).ready(function() {
         });
     }
 
+    checkHour();
+
     // Function to loop through tasks in localStorage and display them
     function loadTasks() {
         for (var i = 9; i < 18; i++) {
