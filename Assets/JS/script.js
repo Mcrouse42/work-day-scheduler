@@ -13,7 +13,29 @@ $(document).ready(function() {
         localStorage.setItem(hour, task);
     });
     
+    // Function to check current time and color code background accordingly
+    function checkHour() {
+        var currentTime = moment().hours();
 
+        $(".time-block").each(function() {
+            var timeBlockHour = parseInt($(this).attr("id").split("-")[1]);
+            // Past should be grey 
+            if (timeBlockHour < currentTime) {
+                $(this).addClass("past");
+            }
+            // Present should be red
+            else if (timeBlockHour === currentTime) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            }
+            // Future should be green
+            else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+            }
+        });
+    }
 
     // Function to loop through tasks in localStorage and display them
     function loadTasks() {
