@@ -18,20 +18,17 @@ $(document).ready(function() {
         var currentTime = moment().hours();
 
         $(".description").each(function() {
-            var timeBlockHour = parseInt($(this).attr("id").split("-")[1]);
+            var timeBlockHour = parseInt($(this).attr("id"));
             // Past should be grey 
             if (timeBlockHour < currentTime) {
                 $(this).addClass("past");
             }
             // Present should be red
             else if (timeBlockHour === currentTime) {
-                $(this).removeClass("past");
                 $(this).addClass("present");
             }
             // Future should be green
             else {
-                $(this).removeClass("past");
-                $(this).removeClass("present");
                 $(this).addClass("future");
             }
         });
