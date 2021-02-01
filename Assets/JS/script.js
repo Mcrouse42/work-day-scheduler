@@ -13,7 +13,7 @@ $(document).ready(function() {
         localStorage.setItem(hour, task);
     });
     
-    // Function to check current time and color code background accordingly
+    // Function to check current time and color code background 
     function checkHour() {
         var currentTime = moment().hours();
 
