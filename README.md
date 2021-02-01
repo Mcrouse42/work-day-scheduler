@@ -11,5 +11,5 @@ Work Day Scheduler is a website that allows you to store your meetings, appointm
 *jQuery
 *Moment.js
 
-![picture alt](https://imgur.com/DKBpEzZ)
+(https://imgur.com/DKBpEzZ)
 
